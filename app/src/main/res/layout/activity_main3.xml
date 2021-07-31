@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/black">
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/profile1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/madara"
+        app:shapeAppearanceOverlay="@style/Circular"
+        app:layout_constraintHorizontal_bias="0.25"
+        android:scaleType="centerCrop"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"/>
+
+    <EditText
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/curved"
+        android:id="@+id/chat"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/black"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:hint="Enter Message"
+        android:textColorHint="#959393"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        />
+
+    <ImageButton
+        android:id="@+id/send1"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:srcCompat="@drawable/send"
+        android:scaleType="centerCrop"
+        android:layout_toRightOf="@+id/chat"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="5dp"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_marginBottom="-5dp"
+        android:rotation="360"
+        />
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@id/profile1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Madara"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:id="@+id/Name1"
+        android:textColor="@color/white"
+        />
+
+    <ImageButton
+        android:id="@+id/vcall1"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="43dp"
+        android:layout_height="51dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@+id/call1"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/vc" />
+
+    <ImageButton
+        android:id="@+id/call1"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/call"
+        android:layout_toRightOf="@+id/Name1"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:scaleType="centerCrop"
+        style="@style/Widget.AppCompat.Button.Borderless" />
+
+    <ImageButton
+        android:id="@+id/option"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="39dp"
+        android:layout_height="59dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/vcall1"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/option" />
+
+    <ListView
+        android:id="@+id/chatList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="-12dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginBottom="55dp"
+        tools:context="."/>
+</RelativeLayout>
